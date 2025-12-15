@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pasteleria Yuli</title>
+
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  
+  <link rel="stylesheet" href="estilos/estilos1.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="nav-left">
+     <h1 class="brand"><i class="fa-solid fa-cake-candles"></i> Pastelería Yuli</h1>
+      <nav class="nav-links">
+        <a href="#inicio">Inicio</a>
+        <a href="#productos">Productos</a>
+        <a href="#pasteles">Pasteles</a>
+        <a href="#eventos">Eventos</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+    <div class="nav-right">
+      <button id="openCartBtn" class="cart-btn" aria-label="Abrir carrito">
+        <i class="fa-solid fa-bag-shopping"></i>
+        <span id="cartCount" class="cart-count">0</span>
+      </button>
+    </div>
+  </header>
+
+  
+  <section id="inicio" class="hero">
+    <div class="hero-content">
+      <h2>Sabor auténtico, natural y delicioso</h2>
+      <p>Pasteles artesanales 100% naturales. Endulza tus momentos especiales.</p>
+      <a href="#pasteles" class="btn-primary">Ver Pasteles</a>
+    </div>
+  </section>
+
+  
+  <section id="productos" class="section">
+    <h2>Nuestros Productos</h2>
+    <p class="muted">Variedad de pasteles frescos y deliciosos, perfectos para cualquier ocasión.</p>
+    <div class="grid cards">
+      <article class="card">
+        <img src="imagenes/torta10.jpg" alt="Pastel de Chocolate">
+        <h3>Pastel de Chocolate</h3>
+        <p>Clásico y húmedo, ideal para compartir.</p>
+      </article>
+      <article class="card">
+        <img src="imagenes/torta12.jpg" alt="Pastel Mixta Chocolate y Vainilla">
+        <h3>Pastel Mixta Chocolate y Vainilla</h3>
+        <p>Textura cremosa con cobertura de fresa fresca.</p>
+      </article>
+      <article class="card">
+        <img src="imagenes/torta1.jpg" alt="Pastel de Moca">
+        <h3>Pastel de Moca</h3>
+        <p>Suave aroma a café con crema chantilly.</p>
+      </article>
+      <article class="card">
+        <img src="imagenes/torta13.jpg" alt="Pastel Helada">
+        <h3>Pastel Helada</h3>
+        <p>Fresco y ligero con sabor a gelatina de fresa.</p>
+      </article>
+      <article class="card">
+        <img src="imagenes/torta14.jpg" alt="Pastel de Tres Leches">
+        <h3>Pastel de Tres Leches</h3>
+        <p>Empapado en tres tipos de leche para un sabor inolvidable.</p>
+      </article>
+      <article class="card">
+        <img src="imagenes/torta20.jpg" alt="Pastel de Fresa">
+        <h3>Pastel de Fresa</h3>
+        <p>Fresco y frutal, sabor natural a fresas maduras.</p>
+      </article>
+      <article class="card">
+        <img src="imagenes/torta11.jpg" alt="Pastel Cheesecake Dorado">
+        <h3>Pastel Cheesecake Dorado</h3>
+        <p>Cremoso y sofisticado, con topping de fresa y chocolate.</p>
+      </article>
+      <article class="card">
+        <img src="imagenes/torta21.jpg" alt="Pastel Café Romántico">
+        <h3>Pastel Café Romántico</h3>
+        <p>Suave sabor a café, perfecto con bebida caliente.</p>
+      </article>
+    </div>
+  </section>
+
+ 
+  <section id="pasteles" class="section">
+    <h2>Elige tu pastel favorito</h2>
+    <p class="muted">Selecciona la cantidad y agrégalos al carrito.</p>
+    <div class="grid products">
+      <div class="product">
+        <img src="imagenes/torta10.jpg" alt="Chocolate">
+        <div class="product-info">
+          <h4>Chocolate</h4>
+          <p class="price">S/ 45</p>
+          <div class="product-actions">
+            <input type="number" min="1" value="1" class="qty">
+            <button class="btn add-to-cart" data-name="Chocolate" data-price="45">Agregar</button>
+          </div>
+        </div>
+      </div>
+      <div class="product">
+        <img src="imagenes/torta12.jpg" alt="Mixta Chocolate y Vainilla">
+        <div class="product-info">
+          <h4>Mixta Chocolate y Vainilla</h4>
+          <p class="price">S/ 43</p>
+          <div class="product-actions">
+            <input type="number" min="1" value="1" class="qty">
+            <button class="btn add-to-cart" data-name="Mixta" data-price="43">Agregar</button>
+          </div>
+        </div>
+      </div>
+      <div class="product">
+        <img src="imagenes/torta1.jpg" alt="Crema de Moca">
+        <div class="product-info">
+          <h4>Crema de Moca</h4>
+          <p class="price">S/ 35</p>
+          <div class="product-actions">
+            <input type="number" min="1" value="1" class="qty">
+            <button class="btn add-to-cart" data-name="Moca" data-price="35">Agregar</button>
+          </div>
+        </div>
+      </div>
+      <div class="product">
+        <img src="imagenes/torta14.jpg" alt="Tres Leches">
+        <div class="product-info">
+          <h4>Tres Leches</h4>
+          <p class="price">S/ 40</p>
+          <div class="product-actions">
+            <input type="number" min="1" value="1" class="qty">
+            <button class="btn add-to-cart" data-name="Tres Leches" data-price="40">Agregar</button>
+          </div>
+        </div>
+      </div>
+      <div class="product">
+        <img src="imagenes/torta13.jpg" alt="Helada">
+        <div class="product-info">
+          <h4>Helada</h4>
+          <p class="price">S/ 45</p>
+          <div class="product-actions">
+            <input type="number" min="1" value="1" class="qty">
+            <button class="btn add-to-cart" data-name="Helada" data-price="45">Agregar</button>
+          </div>
+        </div>
+      </div>
+      <div class="product">
+        <img src="imagenes/torta20.jpg" alt="Fresa">
+        <div class="product-info">
+          <h4>Fresa</h4>
+          <p class="price">S/ 35</p>
+          <div class="product-actions">
+            <input type="number" min="1" value="1" class="qty">
+            <button class="btn add-to-cart" data-name="Fresa" data-price="35">Agregar</button>
+          </div>
+        </div>
+      </div>
+      <div class="product">
+        <img src="imagenes/torta11.jpg" alt="Cheesecake Dorado">
+        <div class="product-info">
+          <h4>Cheesecake Dorado</h4>
+          <p class="price">S/ 40</p>
+          <div class="product-actions">
+            <input type="number" min="1" value="1" class="qty">
+            <button class="btn add-to-cart" data-name="Cheesecake Dorado" data-price="40">Agregar</button>
+          </div>
+        </div>
+      </div>
+      <div class="product">
+        <img src="imagenes/torta21.jpg" alt="Café Romántico">
+        <div class="product-info">
+          <h4>Café Romántico</h4>
+          <p class="price">S/ 42</p>
+          <div class="product-actions">
+            <input type="number" min="1" value="1" class="qty">
+            <button class="btn add-to-cart" data-name="Café Romántico" data-price="42">Agregar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="order-actions">
+      <button id="openCartFromSection" class="btn-outline">Ver carrito</button>
+      <button id="placeOrderBtn" class="btn-primary">Pedir pedido por WhatsApp</button>
+    </div>
+  </section>
+
+  
+  <section id="eventos" class="section eventos">
+    <h2>Planes y Eventos</h2>
+    <p>Pasteles y postres personalizados para cumpleaños, bodas, aniversarios y eventos corporativos.</p>
+    <div class="grid cards">
+      <article class="card">
+        <i class="fa-solid fa-birthday-cake fa-3x"></i>
+        <h3>Cumpleaños</h3>
+        <p>Pasteles temáticos y cupcakes personalizados.</p>
+      </article>
+      <article class="card">
+        <i class="fa-solid fa-ring fa-3x"></i>
+        <h3>Bodas</h3>
+        <p>Diseños elegantes y sofisticados.</p>
+      </article>
+      <article class="card">
+        <i class="fa-solid fa-glass-cheers fa-3x"></i>
+        <h3>Aniversarios</h3>
+        <p>Postres especiales para momentos únicos.</p>
+      </article>
+      <article class="card">
+        <i class="fa-solid fa-briefcase fa-3x"></i>
+        <h3>Eventos Corporativos</h3>
+        <p>Pasteles personalizados con logo.</p>
+      </article>
+    </div>
+    <div class="event-actions">
+      <a href="interfaces/cotización.html" target="_blank" class="btn-primary">Solicitar Cotización</a>
+    </div>
+  </section>
+
+  
+  <footer class="site-footer">
+    <div class="footer-inner">
+      
+      <div class="footer-column">
+        <h4>
+          <i class="fa-solid fa-cake-candles fa-beat" style="color:#e67e22;"></i> Dulce Sabor
+        </h4>
+        <p>Pastelería Yuli — Endulza tus momentos especiales.</p>
+        <p><i class="fa-solid fa-location-dot"></i> Jr. Cusco 805, Espinar-Cusco</p>
+        <p><i class="fa-solid fa-phone"></i> +51 916367897</p>
+        <p><i class="fa-solid fa-envelope"></i> contactopateleria@yuly.com</p>
+      </div>
+
+     
+      <div class="footer-column">
+        <h4>Redes Sociales</h4>
+        <p><i class="fa-brands fa-instagram"></i> @yuli</p>
+        <p><i class="fa-brands fa-facebook"></i> DulceSabor</p>
+        <p><i class="fa-brands fa-whatsapp"></i> +51 916367897</p>
+      </div>
+
+     
+      <div class="footer-column">
+        <h4>Suscríbete</h4>
+        <p>Recibe promociones y novedades directamente en tu correo.</p>
+        <form class="subscribe-form">
+          <input type="email" placeholder="Tu correo electrónico">
+          <button type="submit" class="btn-subscribe">Suscribirse</button>
+        </form>
+
+        <p id="mensajeSuscripcion" style="font-weight: bold; margin-top: 10px;"></p>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 Pasteleria Yuli — Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  
+<div id="cartModal" class="cart-modal">
+  <div class="cart-content">
+    <h3>Tu carrito</h3>
+    <div id="cartItems" class="cart-items"></div>
+    <p>Total: S/ <span id="cartTotal">0.00</span></p>
+    <button id="checkoutBtn">Pedir pedido por WhatsApp</button>
+    <button id="closeCartBtn">Cerrar</button>
+  </div>
+</div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
